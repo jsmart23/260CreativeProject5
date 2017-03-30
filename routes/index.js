@@ -10,6 +10,14 @@ router.get('/comments', function(req, res, next) {
   });
 });
 
+router.post('/rsvp', function(req, res, next){
+  var rsvp = new Comment(req.body);
+  rsvp.save(function(err, comment){
+  if(err){ return next(err); }
+    res.json(comment);
+  });
+});
+
 router.post('/comments', function(req, res, next) {
   var comment = new Comment(req.body);
   comment.save(function(err, comment){

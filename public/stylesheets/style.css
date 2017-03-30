@@ -1,8 +1,16 @@
 body {
+  
+  background-image: url("https://t3.ftcdn.net/jpg/00/81/67/00/240_F_81670020_IV8y1ry5wcI5cTOaEywJB8sTlNY6Y4fg.jpg");
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px 'Berkshire Swash', Helvetica, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+#rsvp{
+   position: absolute;
+   right: 10%;
+   top: 10%;
 }
